@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* zera margens padrão dos elementos */
+    padding: 0; /* zera margens e paddings padrão dos elementos */
+    box-sizing: border-box;/* border-box para que o padding e a borda sejam incluídos na largura e altura totais do elemento */
+}
+
+/* ESTILOS BASE (MOBILE FIRST) */
+
+header {
+    margin: 24px 0 0 24px; /* margem para telas pequenas */
+}
+
+.link-header {
+    display: none; /* Esconde os links no mobile */
+}
+
+.btn-header {
+    background: #665ae1;
+    border-radius: 20px;
+    color: #fff;
+    width: 130px;
+    height: 41px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.btn-header:hover {
+    opacity: 0.8;
+}
+
+.btn-header:active {
+    opacity: 0.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-principal {
+    width: 90%;
+    max-width: 450px; /* Limita o tamanho máximo em telas maiores */
+    margin-top: 50px;
+    order: 2; /* Muda a ordem, imagem aparece depois do texto no mobile */
+}
+
+section {
+    order: 1; /* Texto aparece primeiro no mobile */
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #515151;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #515151;
+    margin-top: 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #848484;
+    max-width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-main {
+    background: #adff00;
+    border-radius: 30px;
+    width: 239px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+.btn-main:hover {
+    opacity: 0.8;
+}
+
+.btn-main:active {
+    opacity: 0.6;
+}
+
+.link-header:hover {
+    color: #2a5ab4
+}
+
+.link-header:active {
+    color: #231aca;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex; /* Torna o container um flexbox */
+        flex-direction: column; /* Mantém a direção da coluna */
+        height: 100vh;
+    }
+
+    header {
+        margin: 0 0 80px 86px; /* Ajusta a margem para o novo layout */
+        width: auto; /* Remove a largura fixa para o header se ajustar */
+        display: flex; /* Torna o header um container flexível */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+    }
+
+    header .link-header {
+        display: inline; /* Mostra os links no desktop */
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #848484;
+        cursor: pointer;
+        margin-right: 23px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; /* Centraliza verticalmente a imagem e o texto */
+        padding: 0 80px;
+        gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+    }
+
+    .img-principal {
+        order: 1; /* Imagem volta para a esquerda */
+        width: 45%;
+        max-width: 568px;
+        height: auto;
+        margin: 0; /* Remove margens desnecessárias */
+    }
+
+    section {
+        order: 2; /* Texto vai para a direita */
+        text-align: left;
+        width: 45%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 100px;
+        line-height: 122px;
+    }
+
+    h2 {
+        font-size: 58px;
+        line-height: 71px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 514px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
