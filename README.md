@@ -42,7 +42,7 @@ Este é um projeto puramente front-end (HTML/CSS). Para visualizá-lo, siga os p
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/nexuscleo-commits/we-care-your-pet/archive/refs/heads/main.zip
+    git clone https://github.com/nexuscleo-commits/we-care-your-pet.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
@@ -67,14 +67,12 @@ Contribuições são sempre bem-vindas! Se você tiver sugestões para melhorar 
 
 ---
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
----
-
 ## 📧 Contato
 
-**Cleomar** - nexuscleo@gmail.com
+**Cleomar**
+- **Email**: [nexuscleo@gmail.com](mailto:nexuscleo@gmail.com)
+- **LinkedIn**: [Visite meu Perfil](https://www.linkedin.com/in/nexuscleo)
 
 Link do Projeto: https://nexuscleo-commits.github.io/we-care-your-pet/
+
+&copy;NexusCleo 2025.
